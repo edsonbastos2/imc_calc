@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.gridIcon {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.gridTitle {
+    font-size: 23px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.gridInfo {
+    font-size: 12px;
+    color: #fff;
+}
+
+.yourImc {
+    color: #fff;
+    font-size: 1rem;
+    margin: 10px 0;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+    font-weight: 700;
+}
