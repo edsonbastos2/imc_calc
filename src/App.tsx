@@ -44,6 +44,7 @@ export const App = () => {
             placeholder='Digite sua altura Ex: 1.5 (m)'
             value={heightField ? heightField : ''}
             onChange={e => setHeightField(parseFloat(e.target.value))}
+            disabled={toShow ? true : false}
           />
           <input
             className={style.leftSide__input}
@@ -51,8 +52,9 @@ export const App = () => {
             placeholder='Digite seu peso Ex: 80.3 (kg)'
             value={weightField ? weightField : ''}
             onChange={e => setWeightField(parseFloat(e.target.value))}
+            disabled={toShow ? true : false}
           />
-          <button className={style.leftSide__btn} onClick={handleCalcButton}>Calcular</button>
+          <button className={style.leftSide__btn} onClick={handleCalcButton} disabled={toShow ? true : false}>Calcular</button>
         </div>
         <div className={style.rightSide}>
           {
